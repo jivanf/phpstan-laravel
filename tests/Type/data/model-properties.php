@@ -126,6 +126,7 @@ function test(
     assertType('string', $address->nullable_address_id); // overridden by a @property
     assertType('int<0, max>', $address->foreign_id_constrained);
     assertType('int<0, max>|null', $address->nullable_foreign_id_constrained);
+    assertType('string', $address->foreign_uuid);
     assertType('App\ValueObjects\Favorites', $user->favorites);
     assertType('string', $address->uuid);
     assertType('string', $roleUser->role_id);

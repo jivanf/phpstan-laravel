@@ -795,6 +795,7 @@ final class MigrationSchemaParser
             case 'timetz':
             case 'ulid':
             case 'uuid':
+            case 'foreignuuid':
             case 'binary':
                 $table->setColumn(new Column($columnName, 'string', $nullable));
 
